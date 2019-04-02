@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LastRewardedActivity">
 
     <include android:id="@+id/abActionBar"
         layout="@layout/actionbar">
@@ -18,4 +18,5 @@
         android:layout_below="@+id/abActionBar">
 
     </android.support.v7.widget.RecyclerView>
+
 </android.widget.RelativeLayout>

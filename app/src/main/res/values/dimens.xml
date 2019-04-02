@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+***REMOVED***
+    <dimen name="cvpet_hmargin">40dp</dimen>
+    <dimen name="cvpet_bmargin">20dp</dimen>
+    <dimen name="cvpet_radius">4dp</dimen>
+    <dimen name="cvpet_textname">24dp</dimen>
+    <dimen name="cvpet_name_hmargin">10dp</dimen>
+    <dimen name="cvpet_maxheight">300dp</dimen>
+    <dimen name="petlist_top">40dp</dimen>
+    <dimen name="ab_elevation">4dp</dimen>
+    <dimen name="title_height">32</dimen>
+***REMOVED***
