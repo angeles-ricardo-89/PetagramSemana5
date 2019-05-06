@@ -1,24 +1,24 @@
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="contact">Contacto</string>
+    <string name="about">Acerca de</string>
+    <string name="name">Nombre</string>
+    <string name="email">Correo electrónico</string>
+    <string name="message">Mensaje</string>
+    <string name="send_message">Enviar comentario</string>
     <string name="sender_email">tucurreo@gmail.com</string>
     <string name="email_password">tupassword</string>
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    <string name="send_feedback">Enviar comentario</string>
+    <string name="sending_feedback">Enviando su comentario, espere por favor.</string>
+    <string name="feedback_sent">Comentario enviado.</string>
+    <string name="dev_info">Egresado de la licenciatura en Matemáticas aplicadas y computación.\n\n
+                            Inicié en el mundo laboral como desarrollador web, posteriormente ingresé
+                            en el sector de medios de pago programando principalmente en c/c++, desarrollando
+                            los productos principales y herramientas para testing y automatización de
+                            procesos.
+                            </string>
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="petprofile_name">Solovino</string>
+</resources>
