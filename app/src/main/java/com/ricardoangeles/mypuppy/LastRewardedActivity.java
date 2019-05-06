@@ -6,6 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.ricardoangeles.mypuppy.adapters.ActivityWithAdapter;
+import com.ricardoangeles.mypuppy.adapters.PetAdapter;
+
 import java.util.ArrayList;
 
 public class LastRewardedActivity extends AppCompatActivity implements ActivityWithAdapter {
@@ -30,7 +33,7 @@ public class LastRewardedActivity extends AppCompatActivity implements ActivityW
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_last_rewarded);
-        setContentView(R.layout.activity_main);
+
         rvPets = (RecyclerView) findViewById(R.id.rvPets);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);

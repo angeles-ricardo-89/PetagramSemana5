@@ -8,5 +8,13 @@
     <dimen name="cvpet_maxheight">300dp</dimen>
     <dimen name="petlist_top">40dp</dimen>
     <dimen name="ab_elevation">4dp</dimen>
-    <dimen name="title_height">32</dimen>
+    <dimen name="title_height">32dp</dimen>
+    <dimen name="dev_name_size">32dp</dimen>
+    <dimen name="dev_bio">18dp</dimen>
+    <dimen name="dev_name_topm">10dp</dimen>
+    <dimen name="dev_bio_topm">20dp</dimen>
+    <dimen name="cvphoto_maxheight">150dp</dimen>
+    <dimen name="cvphoto_maxwidth">110dp</dimen>
+    <dimen name="cvphoto_hmargin">10dp</dimen>
+    <dimen name="cvphoto_bmargin">10dp</dimen>
 ***REMOVED***

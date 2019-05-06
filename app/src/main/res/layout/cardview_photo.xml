@@ -3,49 +3,35 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cvPet"
-    android:layout_width="match_parent"
+
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="@dimen/cvpet_hmargin"
-    android:layout_marginBottom="@dimen/cvpet_bmargin"
+    android:layout_marginHorizontal="@dimen/cvphoto_hmargin"
+    android:layout_marginBottom="@dimen/cvphoto_bmargin"
     card_view:cardCornerRadius="@dimen/cvpet_radius"
+    android:layout_width="@dimen/cvphoto_maxwidth"
     >
 
     <RelativeLayout
-        android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
         >
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/cvpet_maxheight"
+            android:layout_height="@dimen/cvphoto_maxheight"
             android:id="@+id/ivPetPicture"
             android:src="@drawable/perro"
             android:background="@color/colorAccent"
-            android:maxHeight="@dimen/cvpet_maxheight"
+            android:maxHeight="@dimen/cvphoto_maxheight"
             />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ivPetPicture"
-            android:id="@+id/ibGiveABonie"
-            android:background="@drawable/icons8_hueso_del_perro_48"/>
-        <TextView
-            android:id="@+id/tvPetName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ivPetPicture"
-            android:layout_toRightOf="@+id/ibGiveABonie"
-            android:textSize="@dimen/cvpet_textname"
-            android:layout_marginLeft="@dimen/cvpet_name_hmargin"
-            android:text="Perro"
-            android:textStyle="bold"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ivPetPicture"
-            android:layout_alignParentRight="true"
+
             android:id="@+id/ivBones"
             android:src="@drawable/icons8_hueso_del_perro_48_color"
             />
@@ -54,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ivPetPicture"
-            android:layout_toLeftOf="@id/ivBones"
+            android:layout_toRightOf="@id/ivBones"
             android:textSize="@dimen/cvpet_textname"
             android:text="5"/>
 

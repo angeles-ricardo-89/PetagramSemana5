@@ -1,4 +1,4 @@
-package com.ricardoangeles.mypuppy;
+package com.ricardoangeles.mypuppy.adapters;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
@@ -12,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.ricardoangeles.mypuppy.Pet;
+import com.ricardoangeles.mypuppy.R;
+
 import java.util.ArrayList;
 
 import static android.content.ContentValues.TAG;
@@ -21,7 +24,7 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
     public PetAdapter(ArrayList<Pet> pets, Activity activity, boolean visibleLikeButton){
         this.pets = pets;
         this.activity = activity;
-        this.my_act = (ActivityWithAdapter)activity;
+        //this.my_act = (ActivityWithAdapter)activity;
         try{
             this.favHistory = (PetFavHistory)activity;
         } catch (Exception e){
