@@ -12,5 +12,5 @@ Debido a que hace uso de smtp es necesario que su correo (gmail) esté configura
 
 Para la tarea de la semana 5 (Persistencia), usé el siguiente modelo de datos:
 
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![Alt text](/screenshots/PETAGRAM_ER.png?raw=true "ER")
 
