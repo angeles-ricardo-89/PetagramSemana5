@@ -14,3 +14,9 @@ Para la tarea de la semana 5 (Persistencia), usé el siguiente modelo de datos:
 
 ![Alt text](/screenshots/PETAGRAM_ER.png?raw=true "ER")
 
+No me pareció tan clara la petición del modelo de datos (una sola tabla y guardar sólo los ultimos 5), así que tomé como base la idea del ejemplo del curso, donde los likes se guardan en una tabla adicional.
+
+la tabla pet almacena a todas las mascotas, la inserción de las mascotas se hace una sola vez al incio de la aplicación.
+
+Cuando se están guardando los likes, se obtienen los ultimos 5 a los que se les ha dado like, del más reciente al más antiguo.
+
