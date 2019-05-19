@@ -29,4 +29,8 @@ Al ir al activity de favoritos, la mascota recién "premiada" aparecerá al prin
 
 ![Alt text](/screenshots/Semana5_R2.png?raw=true "Rufu al principio de la lista de favoritos")
 
+Al tener la aplicación recién instalada, no aparece nada en los favoritos, pues todos empiezan en 0.
+
+Después de varios intentos, creo que al fin me ha quedado claro MVP.
+
 Saludos!
