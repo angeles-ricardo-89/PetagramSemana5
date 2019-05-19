@@ -20,3 +20,13 @@ la tabla pet almacena a todas las mascotas, la inserción de las mascotas se hac
 
 Cuando se están guardando los likes, se obtienen los ultimos 5 a los que se les ha dado like, del más reciente al más antiguo.
 
+Así cuando el usuario da like (o un huesito) a la mascota, como se ve en la imagen:
+
+
+![Alt text](/screenshots/Semana5_R1.png?raw=true "Huesito a Rufus")
+
+Al ir al activity de favoritos, la mascota recién "premiada" aparecerá al principio de la lista:
+
+![Alt text](/screenshots/Semana5_R2.png?raw=true "Rufu al principio de la lista de favoritos")
+
+Saludos!
