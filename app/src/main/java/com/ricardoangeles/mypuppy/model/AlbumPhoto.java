@@ -1,4 +1,4 @@
-package com.ricardoangeles.mypuppy;
+package com.ricardoangeles.mypuppy.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

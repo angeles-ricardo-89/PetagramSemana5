@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ricardoangeles.mypuppy.AlbumPhoto;
+import com.ricardoangeles.mypuppy.model.AlbumPhoto;
 import com.ricardoangeles.mypuppy.R;
 import com.ricardoangeles.mypuppy.adapters.AlbumPhotoAdapter;
 

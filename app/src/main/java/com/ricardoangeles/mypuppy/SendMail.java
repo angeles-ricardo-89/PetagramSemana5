@@ -21,7 +21,7 @@ public class SendMail extends AsyncTask<GMailSender, Void, Void> {
 
     @Override
     protected void onPreExecute() {
-        super.onPreExecute();
+        //super.onPreExecute();
         progressDialog = ProgressDialog.show(context, context.getString(R.string.send_feedback),
                                              context.getString(R.string.sending_feedback),
                                              false, false);
@@ -42,11 +42,13 @@ public class SendMail extends AsyncTask<GMailSender, Void, Void> {
 
     @Override
     protected void onPostExecute(Void aVoid) {
-        super.onPostExecute(aVoid);
+        //super.onPostExecute(aVoid);
         //Dismissing the progress dialog
         progressDialog.dismiss();
         //Showing a success message
         Toast.makeText(context, context.getString(R.string.feedback_sent), Toast.LENGTH_LONG).show();
         act.close_activity();
     }
+
+
 }

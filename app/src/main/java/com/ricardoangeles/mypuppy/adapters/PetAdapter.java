@@ -12,8 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ricardoangeles.mypuppy.Pet;
+import com.ricardoangeles.mypuppy.model.Pet;
 import com.ricardoangeles.mypuppy.R;
+import com.ricardoangeles.mypuppy.view.IPetsRecyclerViewView;
 
 import java.util.ArrayList;
 
@@ -21,22 +22,24 @@ import static android.content.ContentValues.TAG;
 
 public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
 
-    public PetAdapter(ArrayList<Pet> pets, Activity activity, boolean visibleLikeButton){
-        this.pets = pets;
+    public PetAdapter(Activity activity, boolean visibleLikeButton, IPetsRecyclerViewView iPetsRecyclerViewView){
         this.activity = activity;
-        //this.my_act = (ActivityWithAdapter)activity;
+
         try{
-            this.favHistory = (PetFavHistory)activity;
+            this.iPetsRecyclerViewView = iPetsRecyclerViewView;
         } catch (Exception e){
             Log.e(TAG, "PetAdapter: "  );
         }
         this.visibleLikeButton = visibleLikeButton;
     }
 
+    public void setPets(ArrayList<Pet> pets) {
+        this.pets = pets;
+    }
+
     private ArrayList<Pet> pets;
     private Activity activity;
-    private ActivityWithAdapter my_act;
-    private PetFavHistory favHistory;
+    private IPetsRecyclerViewView iPetsRecyclerViewView;
     private boolean visibleLikeButton;
 
 
@@ -61,13 +64,13 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
             petViewHolder.ibGiveABonie.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    pet.setBonies(pet.getBonies() + 1);
+
                     Toast.makeText(activity, "Le diste un huesito a " + pet.getName(),
                             Toast.LENGTH_SHORT).show();
                     //my_act.setAdapter(); este fue mi primer intento para actualizar el recyclerview
                     //pero sin duda fue mejor usar notifyItemChanged
-
-                    favHistory.pushFavPet(pet);
+                    iPetsRecyclerViewView.petGiveBonie(pet);
+                    iPetsRecyclerViewView.retrievePetList();
                     notifyItemChanged(position);
                 }
             });

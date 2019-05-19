@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.ricardoangeles.mypuppy.AlbumPhoto;
+import com.ricardoangeles.mypuppy.model.AlbumPhoto;
 import com.ricardoangeles.mypuppy.R;
 
 import java.util.ArrayList;

@@ -6,20 +6,19 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
-import com.ricardoangeles.mypuppy.adapters.ActivityWithAdapter;
 import com.ricardoangeles.mypuppy.adapters.PetAdapter;
+import com.ricardoangeles.mypuppy.model.Pet;
+import com.ricardoangeles.mypuppy.presenter.FavoriteRecyclerViewPresenter;
+import com.ricardoangeles.mypuppy.presenter.IRecyclerViewPresenter;
+import com.ricardoangeles.mypuppy.view.IPetsRecyclerViewView;
 
 import java.util.ArrayList;
 
-public class LastRewardedActivity extends AppCompatActivity implements ActivityWithAdapter {
+public class LastRewardedActivity extends AppCompatActivity implements IPetsRecyclerViewView {
 
-    private ArrayList<Pet> rewardedPets;
     private RecyclerView rvPets;
-
-    public void setAdapter(){
-        PetAdapter adapter = new PetAdapter(rewardedPets, this, false);
-        rvPets.setAdapter(adapter);
-    }
+    private PetAdapter rvAdapter;
+    private IRecyclerViewPresenter presenter;
 
     public void configure_toolbar()
     {
@@ -35,15 +34,38 @@ public class LastRewardedActivity extends AppCompatActivity implements ActivityW
         setContentView(R.layout.activity_last_rewarded);
 
         rvPets = (RecyclerView) findViewById(R.id.rvPets);
+        presenter = new FavoriteRecyclerViewPresenter(this, this.getApplicationContext());
+        configure_toolbar();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+    }
+
+    @Override
+    public void setShowablePetList(ArrayList<Pet> pets) {
+        rvAdapter.setPets(pets);
+    }
+
+    @Override
+    public void showPetList() {
+        rvAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void configureRVAdapter() {
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         rvPets.setLayoutManager(llm);
-        //get_pet_list();
-        rewardedPets = getIntent().getParcelableArrayListExtra("favoritos");
-        setAdapter();
-        configure_toolbar();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        rvAdapter = new PetAdapter(this, false, this);
+        rvPets.setAdapter(rvAdapter);
+    }
+
+    @Override
+    public void retrievePetList() {
+        presenter.getPets();
+    }
+
+    @Override
+    public void petGiveBonie(Pet pet) {
 
     }
 }

@@ -14,13 +14,13 @@ import android.support.v7.widget.Toolbar;
 
 
 import com.ricardoangeles.mypuppy.adapters.PageAdapter;
-import com.ricardoangeles.mypuppy.adapters.PetFavHistory;
 import com.ricardoangeles.mypuppy.fragments.PetListFragment;
 import com.ricardoangeles.mypuppy.fragments.PetProfileFragment;
+import com.ricardoangeles.mypuppy.model.Pet;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements PetFavHistory{
+public class MainActivity extends AppCompatActivity  {
     private Toolbar toolbar;
     private TabLayout mainTabLayout;
     private ViewPager mainPager;
@@ -109,22 +109,7 @@ public class MainActivity extends AppCompatActivity implements PetFavHistory{
 
     }
 
-    @Override
-    public void pushFavPet(Pet pet) {
-        int count;
-        count = favPets.size();
-        if(count == 0){
-            favPets.add(pet);
-        } else if(favPets.get(count - 1) != pet){
-            favPets.add(pet);
-        }
 
-        if(favPets.size() > 5){
-            favPets.remove(0);
-        }
-
-
-    }
 
 
 

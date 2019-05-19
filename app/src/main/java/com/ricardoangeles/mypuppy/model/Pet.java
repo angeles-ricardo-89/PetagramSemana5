@@ -1,4 +1,4 @@
-package com.ricardoangeles.mypuppy;
+package com.ricardoangeles.mypuppy.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -11,11 +11,22 @@ public class Pet implements Parcelable{
     private int bonies;//score or likes
     private int picture;
 
+    public int getId() {
+        return id;
+    }
 
-    public Pet(String name, int bonies, int picture) {
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private int id;
+
+
+    public Pet(int id, String name, int bonies, int picture) {
         this.name = name;
         this.bonies = bonies;
         this.picture = picture;
+        this.id = id;
     }
 
     public Pet(Parcel in){
