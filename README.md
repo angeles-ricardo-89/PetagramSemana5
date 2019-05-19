@@ -8,3 +8,9 @@ reemplazar los valores por su email y password.
 
 Debido a que hace uso de smtp es necesario que su correo (gmail) esté configurado para permitir acceso a "aplicaciones menos seguras".
 
+# Semana 5
+
+Para la tarea de la semana 5 (Persistencia), usé el siguiente modelo de datos:
+
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
+
